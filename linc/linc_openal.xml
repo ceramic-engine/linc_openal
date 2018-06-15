@@ -12,7 +12,6 @@
 
     <section if="android">
         <set name='NATIVE_TOOLKIT_PATH' value='${LINC_OPENAL_PATH}lib/'/>
-        <include name='${LINC_OPENAL_PATH}lib/openal-android/files.xml'/>
         <include name='${LINC_OPENAL_PATH}lib/openal-android/defines.xml'/>
     </section>
 
@@ -39,7 +38,13 @@
         </section>
 
         <section if="android">
-            <files id='native-toolkit-openal-android' />
+
+            <libpathflag value="-L${LINC_OPENAL_PATH}lib/openal-android/lib/Android" />
+            <lib name="${LINC_OPENAL_PATH}lib/openal-android/lib/Android/libopenal-v7.so" if="HXCPP_ARMV7" />
+            <lib name="${LINC_OPENAL_PATH}lib/openal-android/lib/Android/libopenal-64.so" if="HXCPP_ARM64" />
+            <lib name="${LINC_OPENAL_PATH}lib/openal-android/lib/Android/libopenal-x86.so" if="HXCPP_X86" />
+            <lib name="${LINC_OPENAL_PATH}lib/openal-android/lib/Android/libopenal.so" unless="HXCPP_ARMV7 || HXCPP_ARM64 || HXCPP_X86" />
+            
             <lib name='-lOpenSLES'/>
         </section>
 
