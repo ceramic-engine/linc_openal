@@ -39,7 +39,6 @@
 
         <section if="android">
 
-            <libpathflag value="-L${LINC_OPENAL_PATH}lib/openal-android/lib/Android" />
             <lib name="${LINC_OPENAL_PATH}lib/openal-android/lib/Android/armeabi-v7a/libopenal.so" if="HXCPP_ARMV7" />
             <lib name="${LINC_OPENAL_PATH}lib/openal-android/lib/Android/arm64-v8a/libopenal.so" if="HXCPP_ARM64" />
             <lib name="${LINC_OPENAL_PATH}lib/openal-android/lib/Android/x86/libopenal.so" if="HXCPP_X86" />
