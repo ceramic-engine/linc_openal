@@ -32,7 +32,7 @@ class Linc {
             This means that somelib/ is the root.
             somelib/somelib/Somelib.hx is the calling file.
             LINC_SOMELIB_PATH is set to somelib/
-            ${LINC_SOMELIB_PATH}/linc/linc_${_lib}.xml is added directly. */
+            ${LINC_SOMELIB_PATH}linc/linc_${_lib}.xml is added directly. */
     macro public static function xml(_lib:String, _relative_root:String='../'):Array<Field> {
 
         var _pos =  Context.currentPos();

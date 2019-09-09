@@ -2,7 +2,7 @@
 
     <files id='haxe'>
         <compilerflag value='-DLINC_OPENAL'/>
-        <compilerflag value='-I${LINC_OPENAL_PATH}/linc/'/>
+        <compilerflag value='-I${LINC_OPENAL_PATH}linc/'/>
         <file name='${LINC_OPENAL_PATH}linc/linc_openal.cpp' />
     </files>
 
