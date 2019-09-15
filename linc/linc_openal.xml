@@ -11,7 +11,7 @@
     </files>
 
     <section if="android">
-        <set name='NATIVE_TOOLKIT_PATH' value='${LINC_OPENAL_PATH}lib/'/>
+        <set name='NATIVE_TOOLKIT_PATH' value='${LINC_OPENAL_PATH}lib'/>
         <include name='${LINC_OPENAL_PATH}lib/openal-android/defines.xml'/>
     </section>
 
