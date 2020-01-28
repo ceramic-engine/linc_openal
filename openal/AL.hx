@@ -297,7 +297,7 @@ extern class AL {
         static inline var EXPONENT_DISTANCE:Int                     = 0xD005;
         static inline var EXPONENT_DISTANCE_CLAMPED:Int             = 0xD006;
 
-} //AL
+}
 
 
 @:include('linc_openal.h')
@@ -371,7 +371,7 @@ extern class ALC {
     public static inline var DEFAULT_ALL_DEVICES_SPECIFIER : Int   = 0x1012;
     public static inline var ALL_DEVICES_SPECIFIER : Int           = 0x1013;
 
-} //ALC
+}
 
 
 //Convenience classes
@@ -396,9 +396,9 @@ class ALError {
 
         return "AL.NO_ERROR: No Error";
 
-    } //desc
+    }
 
-} //ALError
+}
 
 
     /** A convenience class for finding out the value of an ALC error code. */
@@ -424,9 +424,9 @@ class ALCError {
             case _:                    '$UNKNOWN_ERROR ($error)';
         }
 
-    } //desc
+    }
 
-} //ALCError
+}
 
 
 

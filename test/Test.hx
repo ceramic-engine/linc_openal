@@ -51,7 +51,7 @@ class Test {
 
         return true;
 
-    } //init
+    }
 
     static function destroy() {
 
@@ -69,7 +69,7 @@ class Test {
 
         trace('closed device / ${ ALCError.desc(ALC.getError(device)) }');
 
-    } //destroy
+    }
 
     static function create_sound() {
 
@@ -112,7 +112,7 @@ class Test {
 
         trace('destroyed buffer / ${ALError.desc(AL.getError())} ');
 
-    } //destroy_sound
+    }
 
     static function play_sound() {
 
@@ -122,6 +122,6 @@ class Test {
 
         Sys.sleep(1);
 
-    } //play_sound
+    }
 
 }

@@ -24,7 +24,7 @@ class Linc {
 
         return _fields;
 
-    } //touch
+    }
 
         /** Adds a @:buildXml meta node with a linc <set> and an <import> tag.
             The set is named LINC_${_lib}_PATH, and points to the root folder of the library.
@@ -58,6 +58,6 @@ class Linc {
         
         return Context.getBuildFields();
 
-    } //xml
+    }
 
-} //Linc
+}
