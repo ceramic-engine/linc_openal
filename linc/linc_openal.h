@@ -4,7 +4,10 @@
 #include <hxcpp.h>
 #endif
 
-    #if defined(HX_MACOS) || defined(IPHONE)
+    #if defined(MOJOAL)
+        #include "../lib/mojoal/AL/al.h"
+        #include "../lib/mojoal/AL/alc.h"
+    #elif defined(HX_MACOS) || defined(IPHONE)
         #include <OpenAL/al.h>
         #include <OpenAL/alc.h>
     #elif defined(ANDROID) || defined(__ANDROID__)

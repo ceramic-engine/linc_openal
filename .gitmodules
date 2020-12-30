@@ -1,3 +1,8 @@
 [submodule "lib/openal-android"]
 	path = lib/openal-android
 	url = https://github.com/ceramic-engine/openal-android
+	branch = master
+[submodule "lib/mojoal"]
+	path = lib/mojoal
+	url = https://github.com/ceramic-engine/mojoal.git
+	branch = master
