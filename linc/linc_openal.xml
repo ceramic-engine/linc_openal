@@ -25,7 +25,7 @@
         <set name='NATIVE_TOOLKIT_PATH' value='${LINC_OPENAL_PATH}lib'/>
 
         <!-- mojoal needs sdl -->
-        <set name='SDL_PATH' value='${LINC_OPENAL_PATH}../linc_sdl/lib/sdl/' unless='SDL_PATH'/>
+        <set name='SDL_PATH' value='${LINC_OPENAL_PATH}../SDL/' unless='SDL_PATH'/>
 
         <set name='native_toolkit_mojoal_static' value='1'/>
         <include name='${LINC_OPENAL_PATH}lib/mojoal/files.xml'/>
@@ -34,7 +34,7 @@
     <target id="haxe">
 
         <section if="mojoal">
-        
+
             <files id="native-toolkit-mojoal" />
 
         </section>
@@ -60,7 +60,7 @@
                     <lib name='-lopenal' />
                 </section>
             </section>
-        
+
         </section>
 
         <section if="android">
@@ -69,7 +69,7 @@
             <lib name="${LINC_OPENAL_PATH}lib/openal-android/lib/Android/arm64-v8a/libopenal.so" if="HXCPP_ARM64" />
             <lib name="${LINC_OPENAL_PATH}lib/openal-android/lib/Android/x86/libopenal.so" if="HXCPP_X86" />
             <lib name="${LINC_OPENAL_PATH}lib/openal-android/lib/Android/x86_64/libopenal.so" if="HXCPP_X86_64" />
-            
+
             <lib name='-lOpenSLES'/>
         </section>
 
